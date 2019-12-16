@@ -1,0 +1,21 @@
+.form {
+
+    &__label {
+        display: none;
+    }
+
+    &__input {
+        width: calc( 100% - 2.4rem );
+        max-width: 35rem;
+        padding: 1.2rem;
+        background-color: $bgk-light-3;
+        border: 2px solid $bgk-light-1;
+        margin-bottom: 2rem;
+    }
+
+    &__btn {
+        padding: 1.2rem 5rem;
+    }
+
+    
+}

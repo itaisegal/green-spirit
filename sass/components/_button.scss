@@ -1,0 +1,18 @@
+.btn {
+    margin: 0 2rem;
+    padding: 1rem;
+    border: none;
+    background: transparent;
+    font-family: $font-primary;
+    font-size: $default-font-size;
+    line-height: 1;
+    border: 2px solid $color-secondary;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+        color: $bgk-light-1 !important;
+        background-color: $color-secondary;
+    }
+}

@@ -1,0 +1,47 @@
+.footer {
+    background-color: $bgk-light-3;
+    padding: 7rem;
+    display: flex;
+    
+    @include respond (phone) {
+        flex-direction: column-reverse;
+        padding: 3rem;
+    }
+
+    .social {
+        list-style: none;
+        display: flex;
+        margin-right: auto;
+
+        @include respond (phone) {
+            margin: 4rem auto;
+        }
+
+        &__icon{
+            font-size: 1.8rem;
+            width: 3rem;
+            height: 3rem;
+            text-align: center;
+            border-radius: 50%;
+            background-color: $color-primary;
+            transform: translateY(0) scale(1);
+            box-shadow: 0 0 0 rgba(0,0,0,0);
+            transition: all .3s;
+
+            &:not(:last-of-type){
+                margin-right: 2rem;
+            }
+
+            &:hover {
+                transform: translateY(-5px) scale(1.1);
+                box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+            }
+            
+
+            & a{
+                color: $bgk-light-1;
+                text-decoration: none;
+            }
+        }
+    }
+}
